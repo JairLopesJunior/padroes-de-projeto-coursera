@@ -1,0 +1,45 @@
+Elementos dos Padrões
+
+Os Padrões tem os seguintes elementos:
+
+- Contexto
+- Problema
+- Solução
+- Aplicabilidade
+- Consequências
+
+
+Contexto (Situação onde o problema ocorre):
+- Existe uma parte do comportamento de uma classe que deve executar
+diferentes algoritmos em diferentes situações.
+
+
+Problema (Questão que o padrão busca resolver):
+- Como encapsular uma família de algoritmos tornando-os intercambiáveis.
+
+
+Solução (Solução proposta, com como e porquê resolve o problema):
+- Crie uma interface para representar o comportamento que varia, e componha a classe
+com uma implementação dela.
+
+
+Aplicabilidade (Situação em que o uso do padrão é adequado):
+- Existem classes similares apenas com uma parte do comportamento diferente.
+- Um algoritmo pode ser alterado em tempo de execução.
+- Muitas condicionais escolhem entre diferentes comportamentos.
+
+
+Consequências (Positivas e Negativas):
+Positivas:
+- Evita duplicação.
+- Remove condicionais.
+- Permite mudança em tempo de execução.
+
+Negativas:
+- Aumenta o número de classes.
+- Introduz complexidade.
+
+
+
+"Alguns padrões podem ter uma estrutura parecida, mas
+serem aplicáveis em situações muito diferentes."
