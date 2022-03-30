@@ -1,0 +1,27 @@
+Explore um exemplo e veja como os padrões são soluções que podem ser utilizadas em vários contextos.
+
+- Imagine o Software de um estacionamento com diversos tipos de tarifa!
+
+- O Software de estacionamento foi vendido a novas empresas que possuem outras categorias para tarifação!
+
+Pensamento do programador: Posso usar herança!
+
+- Podemos ter uma classe para cada estacionamento que usar o sistema!
+
+Obs: Mas as similaridades vão gerar duplicação de código!
+
+Pensamento do programador: E se eu tentar compor a classe com outras que fazem o cálculo?
+
+- Podemos compor a classe de acordo com o tipo de tarifa e o estacionamento!
+
+- O método que calcula o valor agora delega a lógica para a classe Calculo!
+
+Pensamento do programador: Que legal!! Será que conseguimos usar a mesma solução em outros cenários?
+
+
+
+
+
+
+
+
