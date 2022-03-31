@@ -1,0 +1,12 @@
+Entendendo mais sobre Padrões
+
+
+- Padrão não é um pedaço de código, mas uma ideia que vai no seu cérebro!
+
+- Padrões possuem conhecimento de design utilizado em vários contextos ao redor
+do mundo!
+
+- Os padrões documentam boas práticas, assim como suas consequências e aplicabilidade.
+
+- Os padrões criam um vocabulário de design que permite os desenvolvedores referenciarem melhor
+as soluções utilizadas!
