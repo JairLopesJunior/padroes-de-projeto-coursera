@@ -1,0 +1,21 @@
+Seis Problemas no Uso de Construtores.
+
+
+Listando 6 problemas no uso do 'new' para se criar instância de classes!
+
+
+
+Problemas de Construtores:
+
+1- Não expressam intenção.
+
+2- Impossível ter dois construtores com a mesma assinatura.
+
+3- 'new ClasseX()' -> Sempre retorna um objeto novo da Class 'ClasseX()' que se torna um 
+custo operacional.
+
+4- Não consigo retornar o mesmo objeto outra vez.
+
+5- Não consgio retornar um objeto da SubClasse.
+
+6- Pode implicar em acoplamento concreto.
