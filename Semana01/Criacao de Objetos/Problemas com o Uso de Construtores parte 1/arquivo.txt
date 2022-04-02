@@ -1,0 +1,4 @@
+Problemas com o Uso de Construtores paret 1
+
+
+Nem sempre o uso do 'new' é a forma mais apropriada para se criar instâncias de classes!
