@@ -1,0 +1,18 @@
+Static Factory Methods
+
+Usando-se Static Factory Methods no lugar do 'new' para
+se criar instâncias de classes!
+
+
+
+
+Obs: Neste padrão de projeto o construtor fica 'private' e cria-se um metodo 'public static' que 
+retorna a classe e recebe qualquer tipo de parametros.
+
+Ex:
+
+private GeradorIntAleatorio() {}
+
+public static GeradorIntAleatorio getInstanceEntre(int min, int max) {
+	return new GeradorIntAleatorio(min, max);
+}
