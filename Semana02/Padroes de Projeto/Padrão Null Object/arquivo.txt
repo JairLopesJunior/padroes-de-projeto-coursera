@@ -1,0 +1,83 @@
+Padrão Null Object
+
+
+Represente o "nada/null" de uma forma eficiente em seus programas!
+
+
+Como representar algo que não existe?
+
+
+Codigo antes de aplicar o padrão:
+
+Carrinho cr = ...
+if(cr == null) {
+  value = 0;
+}else{
+  value = cr.total();
+}
+
+Carrinho cr = ...
+if(cr == null){
+  name = "<a>login</a>";
+}else{
+   name = cr.usuario();
+}
+
+public boolean temDesconto(Carrinho cr){
+  if(cr == null){
+    return false;
+  }else{
+    return cr.getItens().size() >= 10;
+  }
+}
+
+
+
+
+Codigo depois de aplicar o padrão:
+
+Carrinho cr = ...
+value = cr.total();
+
+Carrinho cr = ...
+name = cr.usuario();
+
+public boolean temDesconto(Carrinho cr){
+  return cr.getItens().size() >= 10;
+}
+
+
+
+
+
+Padrão Null Object:
+
+public class CarrinhoNull extends Carrinho{
+  
+  public List<Item> getItens() {
+    return new ArrayList<>();
+  }
+
+  public String getUsuario() {
+    return "<a>login</a>";
+  }
+
+  public double total() {
+    return 0;
+  }
+}
+
+
+========================================================
+
+Carrinho cr = null; __
+                      |
+                      v
+Carrinho cr = new CarrinhoNulo();
+
+
+Em vez de atribuir null, deve-se instanciar o Null Object!
+
+
+
+
