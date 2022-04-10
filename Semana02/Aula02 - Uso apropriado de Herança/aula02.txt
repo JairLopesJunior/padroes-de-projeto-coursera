@@ -1,0 +1,34 @@
+Uso Apropriado de Herança
+
+- Como deve ocorrer o reúso apropriado de código 
+quando se faz uso apropriado de herança??
+
+- O correto é realizar uma abstração que capture o que as Classes
+tem em comum!
+
+
+                     ------------------
+                    |   AnimalPequeno  |
+                     ------------------    SuperClasses
+                    | + mover() <abst.>|  
+                    | + respirar()     |
+                     ------------------ 
+                              ^ 
+                              |
+                   ___________|___________
+                  |                       |
+                  |                       |
+         ------------------       ------------------ 
+        |       Grilo      |     |      Aranha      |
+         ------------------       ------------------    SubClasses
+        | + mover()        |     | + mover()        |
+        | + pular()        |     | + fazerTeia()    |
+         ------------------       ------------------ 
+
+
+O principal reúso com Herança são dos métodos baseados nas abstrações, ou seja, o uso correto da herança é
+quando satisfaz o Principio da Substituição de Linkov do SOLID voce pode usar tanto um objeto quanto o outro
+que não irá dar problemas.
+
+
+
