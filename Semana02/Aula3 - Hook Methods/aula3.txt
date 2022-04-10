@@ -1,0 +1,46 @@
+Hook Methods
+
+
+Qual é o princípio por trás da adaptação de comportamento
+por meio de herança?
+
+
+- Quando você criar uma SubClasse, você deve especializar o que é diferente e manter o que é 
+igual na SuperClasse.
+
+
+
+
+public void metodoPrincipla(){
+  // Lógica comum
+  hookMethod();
+  / Lógica comum
+}
+
+
+- O Hook Method é um método abstrato cuja implementação é definida somente nas subclasses.
+
+- Um Hook Method é uma forma de permitir que novos comportamentos possam ser plugados em
+uma classe já existente!
+
+
+
+abstract  -----------> Hook Obrigatório
+
+final ---------------> Nunca pode ser Hook
+
+private -------------> Nunca pode ser Hook
+
+public --------------> Candidatos a Hook    
+protected _|
+
+
+
+
+- Hook Methods são utilizados por vários Padrões!
+
+
+
+
+
+
