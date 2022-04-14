@@ -1,0 +1,24 @@
+Padrão template Method
+
+
+Como criar moldes de algoritmos cujos passos possam ser
+especializados pelas subclasses?
+
+
+Como criar template de um metodo?
+
+ ____________________
+| AlgoritmoAbstrato  |
+ --------------------
+| + templateMethod() | -----> Chama os métodos abstratos!
+| # passo1()  Abs.   | --
+| # passo2()  Abs.   | --|---> Representa passos do algoritmo que podem variar
+ --------------------
+          ^
+          |
+ ____________________
+| AlgoritmoConcreto  | -----> Implementa de forma concreta 
+ --------------------         os passos do algoritmo
+| # passo2()         | 
+| # passo2()         | 
+ --------------------
